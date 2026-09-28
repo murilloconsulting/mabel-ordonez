@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabel Dennisse Ordoñez Palada — Coordinadora de Planificación Financiera</title>
+  <meta name="description" content="Ingeniera Industrial con 17+ años en costos, presupuestos y planeación financiera en agroindustria azucarera. OPEX USD 65–70M, CAPEX USD 12M, SAP CO Key User.">
+  <meta property="og:title" content="Mabel Dennisse Ordoñez Palada — Coordinadora de Planificación Financiera">
+  <meta property="og:description" content="Ingeniera Industrial con 17+ años en costos, presupuestos y planeación financiera en agroindustria azucarera centroamericana. OPEX USD 65–70M, ahorros USD 986K+.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://murilloconsulting.github.io/mabel-ordonez/">
+  <link rel="canonical" href="https://murilloconsulting.github.io/mabel-ordonez/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #1F3A5F;
+      --primary-light: #2a4f80;
+      --primary-dark: #152a45;
+      --accent: #C9A961;
+      --accent-light: #d4bb7e;
+      --bg: #FAFAFA;
+      --bg-card: #FFFFFF;
+      --bg-alt: #F0F2F5;
+      --text: #1a1a1a;
+      --text-muted: #5a5a5a;
+      --text-light: #8a8a8a;
+      --border: #e2e5ea;
+      --hero-bg: linear-gradient(135deg, #1F3A5F 0%, #2a4f80 50%, #1a3055 100%);
+      --hero-text: #FFFFFF;
+      --hero-muted: rgba(255,255,255,0.8);
+      --hero-subtle: rgba(255,255,255,0.5);
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 32px rgba(0,0,0,0.1);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --transition: 0.3s ease;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --primary: #6b9fd4;
+        --primary-light: #7db0e0;
+        --primary-dark: #5a8fc4;
+        --accent: #d4bb7e;
+        --accent-light: #e0cc96;
+        --bg: #0c0e14;
+        --bg-card: #161924;
+        --bg-alt: #121520;
+        --text: #e8e8ec;
+        --text-muted: #9a9ab0;
+        --text-light: #6a6a80;
+        --border: #252838;
+        --hero-bg: linear-gradient(135deg, #0c0e14 0%, #161924 50%, #1a1d2e 100%);
+        --hero-text: #e8e8ec;
+        --hero-muted: rgba(232,232,236,0.7);
+        --hero-subtle: rgba(232,232,236,0.4);
+        --shadow: 0 1px 3px rgba(0,0,0,0.3);
+        --shadow-md: 0 4px 12px rgba(0,0,0,0.35);
+        --shadow-lg: 0 12px 32px rgba(0,0,0,0.4);
+      }
+    }
+    :root[data-theme="dark"] {
+      --primary: #6b9fd4;
+      --primary-light: #7db0e0;
+      --primary-dark: #5a8fc4;
+      --accent: #d4bb7e;
+      --accent-light: #e0cc96;
+      --bg: #0c0e14;
+      --bg-card: #161924;
+      --bg-alt: #121520;
+      --text: #e8e8ec;
+      --text-muted: #9a9ab0;
+      --text-light: #6a6a80;
+      --border: #252838;
+      --hero-bg: linear-gradient(135deg, #0c0e14 0%, #161924 50%, #1a1d2e 100%);
+      --hero-text: #e8e8ec;
+      --hero-muted: rgba(232,232,236,0.7);
+      --hero-subtle: rgba(232,232,236,0.4);
+      --shadow: 0 1px 3px rgba(0,0,0,0.3);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.35);
+      --shadow-lg: 0 12px 32px rgba(0,0,0,0.4);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    /* ─── THEME TOGGLE ─── */
+    .theme-toggle {
+      position: fixed; top: 20px; right: 20px; z-index: 100;
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all var(--transition);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .theme-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .theme-toggle svg { width: 22px; height: 22px; transition: transform 0.4s ease; }
+    .theme-toggle .icon-sun { display: none; color: #f0c040; }
+    .theme-toggle .icon-moon { display: block; color: #fff; }
+    /* When NOT on hero (scrolled past), adjust styling */
+    .theme-toggle.scrolled {
+      border-color: var(--border);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-md);
+    }
+    .theme-toggle.scrolled .icon-moon { color: var(--primary); }
+    /* Dark mode icon swap */
+    :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+    :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+      :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+    }
+    :root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+    :root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+
+    /* ─── HERO (full-width gradient) ─── */
+    .hero {
+      background: var(--hero-bg);
+      padding: 100px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; top: -50%; right: -20%; width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(201,169,97,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; bottom: -40%; left: -15%; width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(201,169,97,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-initials {
+      width: 110px; height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-light));
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 32px;
+      box-shadow: 0 8px 32px rgba(201,169,97,0.35);
+      position: relative;
+    }
+    .hero-initials::after {
+      content: '';
+      position: absolute; inset: -4px;
+      border-radius: 50%;
+      border: 2px solid rgba(201,169,97,0.3);
+    }
+    .hero-initials span {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px; font-weight: 700;
+      color: var(--primary-dark); letter-spacing: 2px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(30px, 5.5vw, 46px);
+      font-weight: 700; color: var(--hero-text);
+      margin-bottom: 16px; line-height: 1.15;
+    }
+    .hero-headline {
+      font-size: clamp(14px, 2.5vw, 17px);
+      color: var(--hero-muted);
+      max-width: 640px; margin: 0 auto 10px;
+      line-height: 1.6;
+    }
+    .hero-location {
+      font-size: 14px; color: var(--hero-subtle);
+      margin-bottom: 36px;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .hero-location svg { width: 14px; height: 14px; }
+    .hero-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 32px; border-radius: var(--radius-sm);
+      font-size: 15px; font-weight: 600;
+      text-decoration: none; cursor: pointer; border: none;
+      transition: all var(--transition);
+    }
+    .btn-hero-primary {
+      background: var(--accent); color: var(--primary-dark);
+      box-shadow: 0 4px 16px rgba(201,169,97,0.35);
+      font-weight: 700;
+    }
+    .btn-hero-primary:hover { background: var(--accent-light); box-shadow: 0 6px 24px rgba(201,169,97,0.45); transform: translateY(-2px); }
+    .btn-hero-primary:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .btn-hero-secondary {
+      background: rgba(255,255,255,0.1); color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      backdrop-filter: blur(4px);
+    }
+    .btn-hero-secondary:hover { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); transform: translateY(-2px); }
+    .btn-hero-secondary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+    /* ─── STAT CARDS ─── */
+    .stats {
+      padding: 0 0 64px;
+      margin-top: -48px;
+      position: relative; z-index: 2;
+    }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      transition: box-shadow var(--transition), transform var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-card::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--primary));
+      opacity: 0; transition: opacity var(--transition);
+    }
+    .stat-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .stat-card:hover::after { opacity: 1; }
+    a.stat-card { text-decoration: none; color: inherit; cursor: pointer; }
+    a.stat-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 700; color: var(--primary);
+      line-height: 1.2; margin-bottom: 8px;
+    }
+    .stat-label {
+      font-size: 12px; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 1px; font-weight: 600;
+    }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 56px 0; }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px; font-weight: 700;
+      color: var(--text); margin-bottom: 8px;
+    }
+    .section-line {
+      width: 48px; height: 3px;
+      background: var(--accent); border-radius: 2px;
+      margin-bottom: 36px;
+    }
+
+    /* ─── SUMMARY ─── */
+    .summary-text {
+      font-size: 16.5px; line-height: 1.85;
+      color: var(--text-muted); max-width: 800px;
+    }
+
+    /* ─── ACHIEVEMENTS ─── */
+    .achievements-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+    }
+    .achievement-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      transition: box-shadow var(--transition), transform var(--transition);
+      position: relative;
+      overflow: hidden;
+      scroll-margin-top: 24px;
+    }
+    .achievement-card::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; width: 4px; height: 100%;
+      background: linear-gradient(180deg, var(--accent), var(--primary));
+    }
+    .achievement-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .achievement-card:target { box-shadow: 0 0 0 2px var(--accent), var(--shadow-md); }
+    .achievement-metric {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px; font-weight: 700;
+      color: var(--primary); margin-bottom: 8px;
+    }
+    .achievement-title {
+      font-size: 15px; font-weight: 600;
+      color: var(--text); margin-bottom: 8px;
+    }
+    .achievement-detail {
+      font-size: 14px; color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ─── EXPERIENCE ─── */
+    .timeline { position: relative; }
+    .timeline::before {
+      content: ''; position: absolute;
+      left: 0; top: 8px; bottom: 0;
+      width: 2px; background: var(--border);
+    }
+    .timeline-item {
+      position: relative; padding-left: 32px;
+      margin-bottom: 44px;
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot {
+      position: absolute; left: -5px; top: 8px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .timeline-item.current .timeline-dot {
+      background: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary), 0 0 0 6px rgba(31,58,95,0.15);
+    }
+    .timeline-role {
+      font-size: 18px; font-weight: 700;
+      color: var(--text); margin-bottom: 2px;
+    }
+    .timeline-company {
+      font-size: 15px; font-weight: 600;
+      color: var(--primary); margin-bottom: 4px;
+    }
+    .timeline-dates {
+      font-size: 13px; color: var(--text-light);
+      margin-bottom: 8px;
+    }
+    .timeline-context {
+      font-size: 14px; color: var(--text-muted);
+      font-style: italic; margin-bottom: 12px;
+    }
+    .timeline-bullets { list-style: none; padding: 0; }
+    .timeline-bullets li {
+      position: relative; padding-left: 16px;
+      font-size: 14px; color: var(--text-muted);
+      margin-bottom: 6px; line-height: 1.55;
+    }
+    .timeline-bullets li::before {
+      content: ''; position: absolute;
+      left: 0; top: 9px;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ─── COMPACT STRIP ─── */
+    .strip {
+      background: var(--bg-alt);
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .strip-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+    }
+    .strip-section h3 {
+      font-size: 12px; text-transform: uppercase;
+      letter-spacing: 1.2px; font-weight: 700;
+      color: var(--primary); margin-bottom: 14px;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px; font-weight: 500;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      transition: all var(--transition);
+    }
+    .chip:hover { border-color: var(--accent); color: var(--text); }
+
+    /* ─── EDUCATION ─── */
+    .education-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;
+    }
+    .education-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 20px 24px;
+      box-shadow: var(--shadow);
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .education-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+    .education-degree {
+      font-size: 15px; font-weight: 600;
+      color: var(--text); margin-bottom: 4px;
+    }
+    .education-institution {
+      font-size: 14px; color: var(--text-muted);
+    }
+
+    /* ─── CERTIFICATIONS ─── */
+    .cert-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      box-shadow: var(--shadow);
+    }
+    .cert-name {
+      font-size: 16px; font-weight: 600;
+      color: var(--text); margin-bottom: 4px;
+    }
+    .cert-issuer {
+      font-size: 14px; color: var(--primary);
+      font-weight: 500; margin-bottom: 8px;
+    }
+    .cert-notes {
+      font-size: 14px; color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact {
+      background: var(--primary-dark);
+      padding: 72px 0;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact::before {
+      content: '';
+      position: absolute; top: -30%; right: -10%; width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(201,169,97,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .contact {
+        background: var(--bg-card);
+        border-top: 1px solid var(--border);
+      }
+    }
+    :root[data-theme="dark"] .contact {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+    }
+    .contact .section-title { color: #fff; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .contact .section-title { color: var(--text); }
+    }
+    :root[data-theme="dark"] .contact .section-title { color: var(--text); }
+    .contact .section-line { background: var(--accent); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr auto; gap: 48px;
+      align-items: start;
+    }
+    .contact-links { display: flex; flex-direction: column; gap: 16px; }
+    .contact-link {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none; color: rgba(255,255,255,0.9);
+      font-size: 15px;
+      transition: all var(--transition);
+    }
+    .contact-link:hover { color: var(--accent-light); transform: translateX(4px); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .contact-link { color: var(--text-muted); }
+      :root:not([data-theme="light"]) .contact-link:hover { color: var(--accent); }
+    }
+    :root[data-theme="dark"] .contact-link { color: var(--text-muted); }
+    :root[data-theme="dark"] .contact-link:hover { color: var(--accent); }
+    .contact-link svg { width: 20px; height: 20px; flex-shrink: 0; opacity: 0.7; }
+    .contact-buttons { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+    .btn-accent {
+      background: var(--accent); color: var(--primary-dark);
+      font-weight: 700;
+      box-shadow: 0 4px 16px rgba(201,169,97,0.3);
+    }
+    .btn-accent:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,169,97,0.4); }
+    .btn-accent:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .btn-outline-light {
+      background: transparent; color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.3);
+    }
+    .btn-outline-light:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.05); transform: translateY(-2px); }
+    .btn-outline-light:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .btn-outline-light { color: var(--text); border-color: var(--border); }
+      :root:not([data-theme="light"]) .btn-outline-light:hover { border-color: var(--primary); }
+    }
+    :root[data-theme="dark"] .btn-outline-light { color: var(--text); border-color: var(--border); }
+    :root[data-theme="dark"] .btn-outline-light:hover { border-color: var(--primary); }
+
+    .qr-block { text-align: center; }
+    .qr-wrapper {
+      background: #FFFFFF;
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      display: inline-block;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .qr-wrapper img { display: block; width: 130px; height: 130px; }
+    .qr-text {
+      font-size: 13px; margin-top: 12px;
+      color: rgba(255,255,255,0.7);
+      max-width: 180px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .qr-text { color: var(--text-light); }
+    }
+    :root[data-theme="dark"] .qr-text { color: var(--text-light); }
+    .qr-url {
+      font-size: 11px; color: rgba(255,255,255,0.5);
+      word-break: break-all; margin-top: 4px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .qr-url { color: var(--text-light); }
+    }
+    :root[data-theme="dark"] .qr-url { color: var(--text-light); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      padding: 28px 0; text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    footer p {
+      font-size: 13px; color: var(--text-light);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--primary); }
+
+    /* ─── SCROLL ANIMATIONS ─── */
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1; transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .hero { padding: 72px 0 64px; }
+      .stats { margin-top: -36px; }
+      .stats-grid { grid-template-columns: 1fr; gap: 12px; }
+      .stat-card { padding: 24px 16px; }
+      .achievements-grid { grid-template-columns: 1fr; }
+      .strip-grid { grid-template-columns: 1fr; gap: 24px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+      .qr-block { display: flex; align-items: center; gap: 16px; text-align: left; }
+      .qr-text { margin-top: 0; }
+      .theme-toggle { top: 14px; right: 14px; width: 42px; height: 42px; }
+      .theme-toggle svg { width: 20px; height: 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 280px; justify-content: center; }
+      .contact-buttons { flex-direction: column; }
+    }
+
+    /* ─── REDUCED MOTION ─── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    /* ─── FOCUS ─── */
+    :focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><circle cx="12" cy="12" r="5"/><path stroke-linecap="round" d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 008.002-4.248z" fill="currentColor" opacity="0.2"/><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 008.002-4.248z"/></svg>
+  </button>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-initials" aria-hidden="true"><span>MO</span></div>
+      <h1>Mabel Dennisse Ordoñez Palada</h1>
+      <p class="hero-headline">Coordinadora de Planificación Financiera · SAP CO · OPEX USD&nbsp;65–70M · CAPEX USD&nbsp;12M en agroindustria azucarera</p>
+      <p class="hero-location">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+        San Marcos, Santa Bárbara, Honduras
+      </p>
+      <div class="hero-buttons">
+        <a href="cv_mabel-ordonez.pdf" class="btn btn-hero-primary" download>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+          Descargar CV (PDF)
+        </a>
+        <a href="#contacto" class="btn btn-hero-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          Contactar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- STATS -->
+    <section class="stats" aria-label="Métricas destacadas">
+      <div class="container">
+        <div class="stats-grid">
+          <a href="#logro-opex" class="stat-card reveal">
+            <div class="stat-value">USD 65–70M</div>
+            <div class="stat-label">OPEX anual gestionado</div>
+          </a>
+          <a href="#logro-ahorros" class="stat-card reveal">
+            <div class="stat-value">USD 986K+</div>
+            <div class="stat-label">Ahorros documentados</div>
+          </a>
+          <a href="#logro-produccion" class="stat-card reveal">
+            <div class="stat-value">21K → 80K ton</div>
+            <div class="stat-label">Crecimiento producción</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUMEN -->
+    <section aria-label="Resumen ejecutivo">
+      <div class="container reveal">
+        <h2 class="section-title">Resumen Ejecutivo</h2>
+        <div class="section-line"></div>
+        <p class="summary-text">Ingeniera Industrial con más de 17 años de trayectoria en costos, presupuestos y planeación financiera en la agroindustria azucarera centroamericana. Especialista en controlling financiero con SAP CO, gestión de presupuesto operativo (OPEX) de USD&nbsp;65–70M anuales y portafolio de inversiones (CAPEX) escalado de USD&nbsp;6M a USD&nbsp;12M. Key User en implementación de SAP CO con migración limpia aceptada por auditoría externa. Participación en benchmark PwC de 17 ingenios latinoamericanos durante 7 años. Evaluación del 100% de los proyectos de ampliación que llevaron la producción de 21K a 80K toneladas de azúcar.</p>
+      </div>
+    </section>
+
+    <!-- LOGROS DESTACADOS -->
+    <section aria-label="Logros destacados">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Logros Destacados</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="achievements-grid">
+          <article class="achievement-card reveal" id="logro-opex">
+            <div class="achievement-metric">USD 65–70M OPEX</div>
+            <h3 class="achievement-title">Gestión de OPEX y escalamiento de CAPEX de USD 6M a USD 12M</h3>
+            <p class="achievement-detail">Administré presupuesto operativo anual de USD 65–70M y escalé el portafolio de inversiones de USD 6M a USD 12M anuales, alineando cada proyecto de ampliación con la estrategia corporativa y el plan quinquenal de crecimiento.</p>
+          </article>
+          <article class="achievement-card reveal" id="logro-ahorros">
+            <div class="achievement-metric">USD 986K+ ahorros</div>
+            <h3 class="achievement-title">Ahorros identificados en optimización de costos</h3>
+            <p class="achievement-detail">Generé ahorros documentados de USD 986K mediante análisis de conveniencia de venta de bagazo vs. cogeneración (USD 435K) y optimización de días de zafra alineados a la ventana de máxima productividad biológica de la caña (USD 551K por reducción de 19 días).</p>
+          </article>
+          <article class="achievement-card reveal" id="logro-produccion">
+            <div class="achievement-metric">21K → 80K ton</div>
+            <h3 class="achievement-title">Evaluación del 100% de proyectos de ampliación</h3>
+            <p class="achievement-detail">Evalué la totalidad de los proyectos de ampliación de molienda que llevaron la producción de 21,000 a 80,000 toneladas de azúcar y de 15 a 67 megavatios de energía, aplicando indicadores financieros con tablas de riesgo y análisis de sensibilidad.</p>
+          </article>
+          <article class="achievement-card reveal">
+            <div class="achievement-metric">5 meses</div>
+            <h3 class="achievement-title">Key User SAP CO: migración limpia</h3>
+            <p class="achievement-detail">Lideré como Key User la implementación de SAP CO en 5 meses, diseñando la estructura base de migración del modelo de costeo anterior, logrando migración limpia aceptada por auditoría externa y cierres de costeo récord reconocidos por el staff financiero corporativo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section aria-label="Experiencia profesional">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Experiencia Profesional</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item current reveal">
+            <div class="timeline-dot"></div>
+            <h3 class="timeline-role">Coordinadora de Planificación Financiera</h3>
+            <div class="timeline-company">Compañía Azucarera Chumbagua</div>
+            <div class="timeline-dates">Jul 2026 – Actualidad · Honduras · Equipo: 4 personas</div>
+            <p class="timeline-context">Empresa líder del sector azucarero hondureño, parte de un grupo corporativo con operaciones agroindustriales y de generación de energía.</p>
+            <ul class="timeline-bullets">
+              <li>Dirijo la planeación financiera, evaluación de inversiones CAPEX y análisis de rentabilidad de proyectos, asegurando alineación con la estrategia corporativa.</li>
+              <li>Lidero equipo multidisciplinario de 4 profesionales (Inversiones, Costs Hunters), todos con maestría o en proceso.</li>
+              <li>Coordino el benchmark McKinsey con los 2 ingenios de la corporación para extracción de buenas prácticas comparativas.</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <h3 class="timeline-role">Jefe de Costos y Presupuesto</h3>
+            <div class="timeline-company">Compañía Azucarera Chumbagua</div>
+            <div class="timeline-dates">May 2010 – May 2026 · Honduras · Equipo: 4 · Presupuesto: USD 70M</div>
+            <p class="timeline-context">Gestión integral de costos, presupuesto operativo (OPEX) y controlling financiero para una de las principales operaciones azucareras de Honduras.</p>
+            <ul class="timeline-bullets">
+              <li>Administré OPEX de USD 65–70M anuales y escalé CAPEX de USD 6M a USD 12M anuales.</li>
+              <li>Evalué el 100% de los proyectos que llevaron la producción de 21K a 80K ton de azúcar y de 15 a 67 MW de energía.</li>
+              <li>Generé USD 986K+ en ahorros: bagazo vs. cogeneración (USD 435K) y optimización de zafra (USD 551K).</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <h3 class="timeline-role">Administración y Control Presupuestario</h3>
+            <div class="timeline-company">Cooperativa de Ingenieros Civiles de Honduras</div>
+            <div class="timeline-dates">Ene 2009 – Abr 2010 · Honduras</div>
+            <ul class="timeline-bullets">
+              <li>Gestioné la administración y el control presupuestario, estableciendo procesos de seguimiento financiero para proyectos de ingeniería civil.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="strip" aria-label="Competencias">
+      <div class="container">
+        <div class="strip-grid reveal">
+          <div class="strip-section">
+            <h3>Habilidades Técnicas</h3>
+            <div class="chips">
+              <span class="chip">SAP CO</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Excel avanzado</span>
+              <span class="chip">Análisis de sensibilidad</span>
+              <span class="chip">Tablas de riesgo CAPEX</span>
+            </div>
+          </div>
+          <div class="strip-section">
+            <h3>Metodologías</h3>
+            <div class="chips">
+              <span class="chip">OPEX/CAPEX</span>
+              <span class="chip">Benchmark (PwC, McKinsey)</span>
+              <span class="chip">Rentabilidad de proyectos</span>
+              <span class="chip">Costeo por centro de costo</span>
+              <span class="chip">KPIs operativos</span>
+            </div>
+          </div>
+          <div class="strip-section">
+            <h3>Liderazgo e Idiomas</h3>
+            <div class="chips">
+              <span class="chip">Equipos 4–5 personas</span>
+              <span class="chip">Coordinación interárea</span>
+              <span class="chip">Alta dirección</span>
+              <span class="chip">Español (Nativo)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section aria-label="Educación">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Educación</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="education-grid reveal">
+          <div class="education-card">
+            <div class="education-degree">MAE en Administración de Proyectos (Pasante)</div>
+            <div class="education-institution">UNITEC</div>
+          </div>
+          <div class="education-card">
+            <div class="education-degree">Ingeniería Industrial</div>
+            <div class="education-institution">UNAH Valle de Sula</div>
+          </div>
+          <div class="education-card">
+            <div class="education-degree">Perito Mercantil y Contador Público</div>
+          </div>
+        </div>
+        <div style="margin-top: 24px;" class="reveal">
+          <div class="cert-card">
+            <div class="cert-name">Premio a la Excelencia Don Francisco Alfredo Pellas</div>
+            <div class="cert-issuer">Grupo Pellas / INCAE</div>
+            <p class="cert-notes">Seleccionada por la compañía para evaluar empresas de industrias ajenas (Compañía Licorera, Seguros América, Distribuidora El Salvador) bajo metodología INCAE; participó en 3 ediciones (8 meses c/u).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto" aria-label="Contacto">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="section-line"></div>
+        <div class="contact-grid">
+          <div>
+            <div class="contact-links">
+              <a href="mailto:Dennisse.op@gmail.com" class="contact-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                Dennisse.op@gmail.com
+              </a>
+              <a href="tel:+50494678804" class="contact-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                +504 9467-8804
+              </a>
+              <a href="https://wa.me/50494678804" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.32 0-4.47-.764-6.206-2.055a.75.75 0 00-.63-.132l-3.148 1.055 1.055-3.148a.75.75 0 00-.132-.63A9.957 9.957 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+            <div class="contact-buttons">
+              <a href="cv_mabel-ordonez.pdf" class="btn btn-accent" download>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                Descargar CV (PDF)
+              </a>
+              <a href="mailto:Dennisse.op@gmail.com" class="btn btn-outline-light">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                Enviar correo
+              </a>
+            </div>
+          </div>
+          <div class="qr-block">
+            <div class="qr-wrapper">
+              <img src="qr_mabel-ordonez.svg" alt="Código QR — abre murilloconsulting.github.io/mabel-ordonez/" width="130" height="130">
+            </div>
+            <p class="qr-text">Abre este perfil en tu celular o compártelo</p>
+            <p class="qr-url">murilloconsulting.github.io/mabel-ordonez/</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Mabel Dennisse Ordoñez Palada · Optimización de perfil · <a href="https://murilloconsulting.github.io/" target="_blank" rel="noopener noreferrer">Murillo Consulting</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    (function() {
+      var toggle = document.getElementById('themeToggle');
+      var root = document.documentElement;
+      var stored;
+      try { stored = localStorage.getItem('theme'); } catch(e) {}
+
+      if (stored === 'dark' || stored === 'light') {
+        root.setAttribute('data-theme', stored);
+      }
+
+      toggle.addEventListener('click', function() {
+        var isDark = root.getAttribute('data-theme') === 'dark' ||
+          (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        var next = isDark ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch(e) {}
+      });
+
+      // Toggle button style when scrolled past hero
+      var hero = document.querySelector('.hero');
+      function checkScroll() {
+        var rect = hero.getBoundingClientRect();
+        toggle.classList.toggle('scrolled', rect.bottom < 0);
+      }
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      checkScroll();
+    })();
+
+    // Scroll reveal
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        reveals.forEach(function(el) { el.classList.add('visible'); });
+        return;
+      }
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      reveals.forEach(function(el) { obs.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
